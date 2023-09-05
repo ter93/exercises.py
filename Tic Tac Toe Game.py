@@ -3,9 +3,9 @@ Type "help", "copyright", "credits" or "license()" for more information.
 import random
 
 def blank_field():
-    print("field[0], field[1], field[2]")
-    print("field[3], field[4], field[5]")
-    print("field[6], field[7], field[8]")
+    print(f"{field[0]}, {field[1]}, {field[2]}")
+    print(f"{field[3]}, {field[4]}, {field[5]}")
+    print(f"{field[6]}, {field[7]}, {field[8]}")
 
 print("Welcome to the tic-tac-toe!")
 print("-----------------------------")
