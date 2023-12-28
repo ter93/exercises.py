@@ -20,7 +20,7 @@ class Resident:
     self.name = name
     self.age = age
     self.role = role  
-  def przedstaw_sie(self):
+  def introduce_oneself(self):
     print(f"I'm {self.name}, I'm {self.age}, I'm {self.role}")
   def age(self):
     self.age += 1
@@ -42,21 +42,21 @@ class ToysManufactury(Buildings):
 
 #Mieszkańcy
 class SantaClaus(Resident):
-  def przedstaw_sie(self):
+  def introduce_oneself(self):
     print(f"I'm Santa Claus {self.name}, I'm {self.age} years. I'm {self.role}.")
 class Reindeer(Resident):
-  def przedstaw_sie(self):
-    super().przedstaw_sie()
+  def introduce_oneself(self):
+    super().introduce_oneself()
     print("We are pulling Santa's sleigh. We are in a hurry to deliver \nall gifts to the children on time")
 
 class Elf(Resident):
-  def przedstaw_sie(self):
-    super().przedstaw_sie()
+  def introduce_oneself(self):
+    super().introduce_oneself()
     print("We help Santa Claus give gifts to children")
 
 class Snowman(Resident):
-  def przedstaw_sie(self):
-    super().przedstaw_sie()
+  def introduce_oneself(self):
+    super().introduce_oneself()
     print("I'm an attaction")
 
 
@@ -88,16 +88,16 @@ def main():
   manufactury.append_resident(Jurand)
   manufactury.append_resident(Ken)
   
-  Mikołaj.przedstaw_sie()
-  Rudolf.przedstaw_sie()
-  Maurycy.przedstaw_sie()
-  Błysk.przedstaw_sie()
-  Pyszałek.przedstaw_sie()
-  Alvin.przedstaw_sie()
-  Elvis.przedstaw_sie()
-  Jurand.przedstaw_sie()
-  Ken.przedstaw_sie()
-  Polo.przedstaw_sie()
+  Mikołaj.introduce_oneself()
+  Rudolf.introduce_oneself()
+  Maurycy.introduce_oneself()
+  Błysk.introduce_oneself()
+  Pyszałek.introduce_oneself()
+  Alvin.introduce_oneself()
+  Elvis.introduce_oneself()
+  Jurand.introduce_oneself()
+  Ken.introduce_oneself()
+  Polo.introduce_oneself()
 
 if __name__ == "__main__":
   main()
